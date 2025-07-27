@@ -23,10 +23,16 @@ main {
 }
 
 .hero {
-  background: #ffe6ec;
-  padding: 2em;
+  background-image: url('images/boutique.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em;
   text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
+
+
 
 .produits {
   display: flex;
@@ -108,4 +114,42 @@ nav.nav-open {
   .menu-toggle {
     display: inline-block;
   }
+}
+.categorie, .sous-categorie {
+  margin-bottom: 2em;
+}
+
+.categorie h3, .sous-categorie h4 {
+  color: #f04f78;
+  margin-bottom: 0.5em;
+}
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produit {
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 200px;
+  text-align: center;
+}
+
+.produit img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  font-size: 0.9em;
+  margin: 10px 0;
+  color: #555;
+}
+
+.prix {
+  font-weight: bold;
+  color: #f04f78;
+  font-size: 1em;
 }
